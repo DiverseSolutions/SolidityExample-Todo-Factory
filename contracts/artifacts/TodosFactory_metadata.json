@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "todoOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "todo",
+						"type": "address"
+					}
+				],
+				"name": "AddedTodo",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "todoOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "todo",
+						"type": "address"
+					}
+				],
+				"name": "DeletedTodo",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "createTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_atAddress",
+						"type": "address"
+					}
+				],
+				"name": "getTodosFromAddress",
+				"outputs": [
+					{
+						"internalType": "contract Todos",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTodosLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_todosAddress",
+						"type": "address"
+					}
+				],
+				"name": "removeTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "todosFactory",
+				"outputs": [
+					{
+						"internalType": "contract Todos",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TodosFactory.sol": "TodosFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Todos.sol": {
+			"keccak256": "0xd0bc14b22dffdae7602003f92a78d60169774953673ba60d04a8509fc9bdeb15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://86a56298c6c229dc45edfc7bf4451168f3ab6147be325614d3de5e9dd9c4ce94",
+				"dweb:/ipfs/QmSGpJernk4QuJa4Z1r8w7K97KZhPfZ9UzxdRfgUYQcSnp"
+			]
+		},
+		"contracts/TodosFactory.sol": {
+			"keccak256": "0xf40230f828845483370fb1c114b661142c8dcf5069a4331dd2a52669294b8e49",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6529163f9098d581a3b40ae817bf5d02e729fed67821d0a75e2de3823110c43",
+				"dweb:/ipfs/QmahcgZfpSTVH4Cvgg1M2ZYFs5aRSiCEJRd3fFoS5tMj36"
+			]
+		}
+	},
+	"version": 1
+}
